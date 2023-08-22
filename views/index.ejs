@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+  <% if (locals.quote) { %>
+    <h1>
+      <img src=<%= img %>>
+      <br/>
+      <%= quote %>
+    </h1>
+    <% } else { %>
+      <img src="images/img1.png" />
+      <h1> Welcome to Cinnama-home! 🍦🥳</h1>
+      <% } %>
+
+
+
+        <form action="/submit" method="POST">
+          <input type="submit" value="Here here!👋">
+        </form>
+
+
+        <%- include("partials/footer.ejs") %>
